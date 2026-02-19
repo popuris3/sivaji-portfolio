@@ -262,20 +262,19 @@
 
               <pre class="mermaid" id="m1">
 flowchart LR
-  A[On-prem / ERP sources] -->|ADF pipelines| B[ADLS Gen2 Landing]
-  B -->|Databricks Jobs / Workflows| C[Bronze (raw Delta)]
-  C --> D[Silver (cleaned Delta)]
-  D --> E[Gold (curated Delta)]
-  E -->|Snowpipe / loads| F[Snowflake]
-  F --> G[BI / Reporting]
-  KV[Key Vault] -.-> B
-  KV -.-> C
-  KV -.-> F
-  RB[RBAC / Unity Catalog] -.-> C
-  MON[Azure Monitor / Logs] -.-> B
-  MON -.-> C
-  MON -.-> F
-  CICD[CI/CD (GitHub/ADO)] -->|Deploy jobs + configs| C
+A[On prem ERP Sources] --> B[ADF Pipelines]
+B --> C[ADLS Landing Zone]
+C --> D[Databricks Bronze]
+D --> E[Databricks Silver]
+E --> F[Databricks Gold]
+F --> G[Snowflake]
+G --> H[BI Reporting]
+
+KV[Key Vault] -.-> B
+KV -.-> D
+MON[Azure Monitor] -.-> D
+RB[RBAC Unity Catalog] -.-> D
+CICD[Azure DevOps CI CD] --> D
               </pre>
 
               <p class="smallHint">Mermaid renders automatically.</p>
@@ -612,10 +611,6 @@ flowchart LR
           </div>
 
           <div class="card">
-            <h3>Quick note</h3>
-            <p class="muted">
-              If you want, i can also add a clean “Projects” repo section with links and screenshots.
-              But keeping it simple is totally fine.
             </p>
             <div class="divider"></div>
             <p class="tiny muted">Last updated: <span id="lastUpdated"></span></p>
