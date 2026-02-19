@@ -1,13 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sivaji Popuri — Data Engineer (Azure • Databricks • Snowflake • Microsoft Fabric)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sivaji Popuri — Data Engineer (Azure • Fabric • Databricks • Snowflake)</title>
 
-  <meta name="description"
-        content="Portfolio of Sivaji Popuri — Data Engineer specializing in Microsoft Fabric, Azure, Databricks, Snowflake, CI/CD, governance, and Fabric-first migrations." />
-
+  <meta name="description" content="Portfolio of Sivaji Popuri — Data Engineer with 5+ years in Azure, Microsoft Fabric, Databricks, Snowflake, and Azure DevOps. Lakehouse, pipelines, migrations, governance, and cost optimization." />
   <meta name="theme-color" content="#0b1220" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +14,6 @@
 
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -24,210 +21,616 @@
     "name": "Sivaji Popuri",
     "jobTitle": "Data Engineer",
     "email": "mailto:popurisivaji@gmail.com",
-    "url": "https://YOUR-PORTFOLIO-DOMAIN/",
+    "url": "",
     "sameAs": [
       "https://www.linkedin.com/in/sivaji-p-71b396301",
       "https://github.com/popuris3"
-    ],
-    "knowsAbout": [
-      "Microsoft Fabric",
-      "OneLake",
-      "Fabric Data Factory pipelines",
-      "Lakehouse architecture",
-      "Delta Lake",
-      "Direct Lake",
-      "Data governance",
-      "CI/CD"
     ]
   }
   </script>
 </head>
 
 <body>
+  <!-- Header -->
   <header class="header">
-    <div class="container">
-      <a class="logo" href="#top">
+    <div class="container headerRow">
+      <a class="logo" href="#top" aria-label="Home">
         <span class="logoMark">SP</span>
         <span class="logoText">Sivaji Popuri</span>
       </a>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary">
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+        <a href="#certs">Certifications</a>
+        <a class="btn small" href="#contact">Contact</a>
       </nav>
+
+      <button class="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
     </div>
   </header>
 
-  <main id="top">
-
+  <main>
     <!-- HERO -->
     <section class="hero">
-      <div class="container">
-        <h1>Fabric-first Data Platforms • Azure • Databricks • Snowflake</h1>
-        <p>
-          Data Engineer with 5+ years designing lakehouses, migrations, and governed analytics platforms.
-          Focused on reliability, CI/CD automation, security, and cost control.
-        </p>
+      <div class="container heroGrid">
+        <div class="heroLeft">
+          <p class="kicker">Data Engineer • Azure • Microsoft Fabric • Databricks • Snowflake • Azure DevOps</p>
+
+          <h1>Building reliable data platforms, migrations, and governed lakehouses.</h1>
+
+          <p class="subhead">
+            Built Azure lakehouse pipelines, ADF migrations, Databricks optimizations, Snowflake ELT, and enterprise Azure DevOps governance
+            for insurance and airline platforms.
+          </p>
+
+          <div class="ctaRow">
+            <a class="btn" href="#projects">See projects</a>
+            <a class="btn ghost" href="#" target="_blank" rel="noreferrer">View resume</a>
+          </div>
+
+          <div class="quickFacts">
+            <div class="pill">ADF • ADLS Gen2 • Databricks Workflows</div>
+            <div class="pill">Microsoft Fabric • Lakehouse • Pipelines</div>
+            <div class="pill">Delta Lake • Medallion (Bronze/Silver/Gold)</div>
+            <div class="pill">Snowflake • Snowpipe • Warehouse optimization</div>
+            <div class="pill">Key Vault • RBAC • Governance</div>
+          </div>
+        </div>
+
+        <aside class="card profileCard">
+          <div class="profileTop">
+            <div class="avatar" aria-hidden="true">SP</div>
+            <div>
+              <div class="name">Sivaji Popuri</div>
+              <div class="role">Data Engineer</div>
+              <div class="muted tiny">Azure • Fabric • Databricks • Snowflake • ADO</div>
+            </div>
+          </div>
+
+          <div class="profileLinks">
+            <a href="https://github.com/popuris3" target="_blank" rel="noreferrer">GitHub</a>
+            <span class="dot">•</span>
+            <a href="https://www.linkedin.com/in/sivaji-p-71b396301" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+
+          <hr class="sep" />
+
+          <div class="metricGrid">
+            <div class="metric">
+              <div class="metricNum">35–60</div>
+              <div class="metricLabel">pipelines (ADF/DBX)</div>
+            </div>
+            <div class="metric">
+              <div class="metricNum">120–220</div>
+              <div class="metricLabel">tables curated</div>
+            </div>
+            <div class="metric">
+              <div class="metricNum">15–30%</div>
+              <div class="metricLabel">compute savings</div>
+            </div>
+            <div class="metric">
+              <div class="metricNum">98.8–99.6%</div>
+              <div class="metricLabel">quality pass rate</div>
+            </div>
+          </div>
+
+          <div class="chips">
+            <span class="chip">Reliable pipelines</span>
+            <span class="chip">Cost guardrails</span>
+            <span class="chip">Observability</span>
+            <span class="chip">Security</span>
+          </div>
+        </aside>
       </div>
+
+      <div class="heroGlow" aria-hidden="true"></div>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects" class="section">
       <div class="container">
-        <h2>Featured Projects</h2>
+        <div class="sectionHead">
+          <h2>Featured projects</h2>
+          <p class="muted">
+            A few projects that show how i build, migrate, optimize, and govern production data platforms.
+          </p>
+        </div>
 
-        <!-- AXA FABRIC MIGRATION -->
+        <!-- PROJECT 1 -->
         <article class="project card">
-          <h3>AXA Insurance — Fabric-first Migration Architecture</h3>
-          <p class="projectMeta">Microsoft Fabric • OneLake • Lakehouse • Delta • Governance</p>
+          <div class="projectTop">
+            <div>
+              <h3>AXA Insurance — Azure Lakehouse + Snowflake Migration Support</h3>
+              <p class="projectMeta">Azure Data Factory • ADLS Gen2 • Databricks (PySpark/Delta) • Snowflake (Snowpipe)</p>
+            </div>
+            <div class="tagRow">
+              <span class="tag">Medallion</span>
+              <span class="tag">Data Quality</span>
+              <span class="tag">Cost Optimization</span>
+              <span class="tag">RBAC</span>
+            </div>
+          </div>
 
-          <ul>
-            <li>Designed Fabric-first architecture using OneLake + Lakehouse medallion layers.</li>
-            <li>Implemented incremental ingestion with Fabric Data Factory pipelines.</li>
-            <li>Enabled Direct Lake semantic models for Power BI consumption.</li>
-            <li>Applied workspace RBAC + OneLake security roles.</li>
-            <li>Integrated governance via Purview + lineage tracking.</li>
-          </ul>
+          <div class="projectGrid">
+            <div>
+              <h4>What i built</h4>
+              <ul>
+                <li>ADF pipelines moving on-prem data to ADLS for orchestration and ingestion.</li>
+                <li>Databricks + Snowflake pipelines using Bronze/Silver/Gold with incremental loads and schema drift handling.</li>
+                <li>Reconciliation + validation framework for parallel-run migrations to keep reporting stable.</li>
+                <li>Warehouse + job tuning to improve performance and reduce compute cost in peak reporting periods.</li>
+                <li>Security controls using RBAC and secrets management (Key Vault patterns).</li>
+              </ul>
+              <h4>What i built</h4>
+<ul>
+  AXA bullets
+</ul>
 
-          <figure class="archFigure">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="
-                  /assets/diagrams/axa-fabric-architecture_1200.webp 1200w,
-                  /assets/diagrams/axa-fabric-architecture_2400.webp 2400w"
-                sizes="(min-width: 1024px) 560px, 92vw" />
+<!-- ✅ STEP 2 START -->
+<hr class="sep" />
 
-              <source
-                type="image/png"
-                srcset="
-                  /assets/diagrams/axa-fabric-architecture_1200.png 1200w,
-                  /assets/diagrams/axa-fabric-architecture_2400.png 2400w"
-                sizes="(min-width: 1024px) 560px, 92vw" />
+<h4>Microsoft Fabric Implementation</h4>
+<ul>
+  <li>Designed Fabric Lakehouse for curated insurance datasets using OneLake.</li>
+  <li>Built Fabric pipelines to ingest from ADLS landing zones.</li>
+  <li>Created Semantic Models for underwriting and claims reporting.</li>
+  <li>Integrated Fabric with Databricks Silver/Gold layers.</li>
+  <li>Implemented RBAC and monitoring.</li>
+</ul>
 
-              <img
-                src="/assets/diagrams/axa-fabric-architecture.svg"
-                alt="Fabric-first migration architecture"
-                width="1200"
-                height="675"
-                loading="lazy"
-                decoding="async" />
-            </picture>
+<h4>Fabric Impact</h4>
+<div class="metricCards">
+  <div class="miniCard">
+    <div class="miniTitle">Report latency</div>
+    <div class="miniValue">2h → 10–15 min</div>
+  </div>
+  <div class="miniCard">
+    <div class="miniTitle">Analyst onboarding</div>
+    <div class="miniValue">3 days → same day</div>
+  </div>
+  <div class="miniCard">
+    <div class="miniTitle">Data reuse</div>
+    <div class="miniValue">40–60% shared datasets</div>
+  </div>
+</div>
+<!-- ✅ STEP 2 END -->
 
-            <figcaption>
-              OneLake ingestion → Bronze/Silver/Gold Lakehouse → Warehouse → Power BI (Direct Lake).
-            </figcaption>
-          </figure>
+<h4>Impact</h4>
+<h4>What i built</h4>
+<ul>
+  <li>ADF pipelines moving on-prem data to ADLS...</li>
+  <li>Databricks + Snowflake pipelines...</li>
+  <li>Reconciliation + validation framework...</li>
+  <li>Warehouse + job tuning...</li>
+  <li>Security controls using RBAC...</li>
+</ul>
+<hr class="sep" />
+
+<h4>Microsoft Fabric Implementation</h4>
+<ul>
+  <li>Designed Fabric Lakehouse for curated insurance datasets using OneLake storage.</li>
+  <li>Built Fabric pipelines to orchestrate ingestion from ADLS landing zones.</li>
+  <li>Created Semantic Models for underwriting and claims reporting in Power BI.</li>
+  <li>Integrated Fabric with Databricks Silver/Gold layers.</li>
+  <li>Implemented workspace RBAC and monitoring.</li>
+</ul>
+
+<h4>Fabric Impact</h4>
+<div class="metricCards">
+  <div class="miniCard">
+    <div class="miniTitle">Report latency</div>
+    <div class="miniValue">2h → 10–15 min</div>
+  </div>
+  <div class="miniCard">
+    <div class="miniTitle">Analyst onboarding</div>
+    <div class="miniValue">3 days → same day</div>
+  </div>
+  <div class="miniCard">
+    <div class="miniTitle">Data reuse</div>
+    <div class="miniValue">40–60% shared datasets</div>
+  </div>
+</div>
+
+<h4>Impact</h4>
+<div class="metricCards">
+   ...
+</div>
+              <h4>Impact</h4>
+              <div class="metricCards">
+                <div class="miniCard">
+                  <div class="miniTitle">Throughput</div>
+                  <div class="miniValue">150–400 GB/day</div>
+                </div>
+                <div class="miniCard">
+                  <div class="miniTitle">Compute savings</div>
+                  <div class="miniValue">18–30%</div>
+                </div>
+                <div class="miniCard">
+                  <div class="miniTitle">Run success</div>
+                  <div class="miniValue">99.3–99.8%</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="diagram">
+              <div class="diagramHead">
+                <h4>Architecture</h4>
+                <button class="btn small ghost copyMermaid" data-target="m1">Copy diagram</button>
+              </div>
+
+              <pre class="mermaid" id="m1">
+flowchart LR
+  A[On-prem / ERP sources] -->|ADF pipelines| B[ADLS Gen2 Landing]
+  B -->|Databricks Jobs / Workflows| C[Bronze (raw Delta)]
+  C --> D[Silver (cleaned Delta)]
+  D --> E[Gold (curated Delta)]
+  E -->|Snowpipe / loads| F[Snowflake]
+  F --> G[BI / Reporting]
+  KV[Key Vault] -.-> B
+  KV -.-> C
+  KV -.-> F
+  RB[RBAC / Unity Catalog] -.-> C
+  MON[Azure Monitor / Logs] -.-> B
+  MON -.-> C
+  MON -.-> F
+  CICD[CI/CD (GitHub/ADO)] -->|Deploy jobs + configs| C
+              </pre>
+
+              <p class="smallHint">Mermaid renders automatically.</p>
+            </div>
+          </div>
         </article>
 
-        <!-- CI/CD + GOVERNANCE -->
+        <!-- PROJECT 2 -->
         <article class="project card">
-          <h3>Fabric CI/CD + Governance Automation</h3>
-          <p class="projectMeta">Git • Fabric Deployment Pipelines • REST APIs • Service Principals</p>
+          <div class="projectTop">
+            <div>
+              <h3>Vistara Airlines — Spark Pipelines + Snowpipe Ingestion for Analytics</h3>
+              <p class="projectMeta">Databricks • Spark UI tuning • ADF orchestration • Delta Lake • Snowflake</p>
+            </div>
+            <div class="tagRow">
+              <span class="tag">Spark</span>
+              <span class="tag">Near real-time</span>
+              <span class="tag">Dimensional Modeling</span>
+            </div>
+          </div>
 
-          <ul>
-            <li>Git-based PR validation workflow.</li>
-            <li>Deployment Pipelines (Dev → Test → Prod).</li>
-            <li>Automated promotion via Fabric REST APIs.</li>
-            <li>Service Principal authentication with Entra ID.</li>
-            <li>Purview governance + lineage visibility.</li>
-          </ul>
+          <div class="projectGrid">
+            <div>
+              <h4>What i built</h4>
+              <ul>
+                <li>Scalable Spark / PySpark pipelines for structured + unstructured airline datasets.</li>
+                <li>Bronze/Silver/Gold ingestion with curated Delta tables for analytics-ready consumption.</li>
+                <li>Snowpipe ingestion patterns for near real-time loading into Snowflake.</li>
+                <li>Star / snowflake schema design to support reporting and self-service BI.</li>
+                <li>Performance tuning using Spark UI (shuffle reduction, I/O optimization).</li>
+              </ul>
 
-          <figure class="archFigure">
-            <img
-              src="/assets/diagrams/axa-fabric-cicd-governance.svg"
-              alt="Fabric CI/CD and governance architecture"
-              width="1200"
-              height="675"
-              loading="lazy"
-              decoding="async" />
-            <figcaption>
-              Git-driven ALM with governance guardrails.
-            </figcaption>
-          </figure>
+              <h4>Impact</h4>
+              <div class="metricCards">
+                <div class="miniCard">
+                  <div class="miniTitle">Job runtime</div>
+                  <div class="miniValue">45m → 18–25m</div>
+                </div>
+                <div class="miniCard">
+                  <div class="miniTitle">Ingestion latency</div>
+                  <div class="miniValue">&lt; 5–10 min</div>
+                </div>
+                <div class="miniCard">
+                  <div class="miniTitle">Volume</div>
+                  <div class="miniValue">1–3 TB/week</div>
+                </div>
+              </div>
+            </div>
 
-          <h4>Sample Azure DevOps Pipeline</h4>
+            <div class="diagram">
+              <div class="diagramHead">
+                <h4>Pipeline flow</h4>
+                <button class="btn small ghost copyMermaid" data-target="m2">Copy diagram</button>
+              </div>
 
-<pre><code>
-stages:
-  - stage: validate
-    jobs:
-      - job: checks
-        steps:
-          - script: echo "Run lint + validations"
+              <pre class="mermaid" id="m2">
+flowchart TB
+  S[Sources: APIs / Azure SQL / Blob / Cosmos / HDFS] --> O[ADF + Databricks Workflows]
+  O --> B[Bronze Delta]
+  B --> C[Silver Delta]
+  C --> G[Gold Delta]
+  G -->|Snowpipe| SF[Snowflake]
+  SF --> BI[Power BI / Tableau]
+              </pre>
 
-  - stage: deploy_test
-    dependsOn: validate
-    jobs:
-      - job: promote
-        steps:
-          - script: echo "Deploy Dev -> Test via Fabric API"
-
-  - stage: deploy_prod
-    dependsOn: deploy_test
-    jobs:
-      - job: approve_and_promote
-        steps:
-          - script: echo "Manual approval + Deploy Test -> Prod"
-</code></pre>
-
+              <p class="smallHint">Add screenshots later if you want (optional).</p>
+            </div>
+          </div>
         </article>
+
+        <!-- PROJECT 3 -->
+        <article class="project card">
+          <div class="projectTop">
+            <div>
+              <h3>Azure DevOps — Governance + Automation (Intake, Dashboards, CI/CD)</h3>
+              <p class="projectMeta">Azure DevOps • GitHub • CI/CD • Power Automate • Work item governance</p>
+            </div>
+            <div class="tagRow">
+              <span class="tag">Governance</span>
+              <span class="tag">Automation</span>
+              <span class="tag">Delivery visibility</span>
+            </div>
+          </div>
+
+          <div class="projectGrid">
+            <div>
+              <h4>What i built</h4>
+              <ul>
+                <li>Standardized work item structure and reporting for enterprise teams (boards, custom fields, states, queries, dashboards).</li>
+                <li>Automated intake-to-work-item creation using Power Automate (auto-linking parent/child, routing, notifications).</li>
+                <li>CI/CD pipelines for data workflows and repeatable deployments using Git/GitHub + Azure DevOps pipelines.</li>
+                <li>Improved delivery visibility through consistent tagging, sprint/iteration hygiene, and stakeholder dashboards.</li>
+              </ul>
+
+              <h4>Impact</h4>
+              <div class="metricCards">
+                <div class="miniCard">
+                  <div class="miniTitle">Effort saved</div>
+                  <div class="miniValue">4–8 hrs/week</div>
+                </div>
+                <div class="miniCard">
+                  <div class="miniTitle">Requests</div>
+                  <div class="miniValue">150–350 / quarter</div>
+                </div>
+                <div class="miniCard">
+                  <div class="miniTitle">Lead time</div>
+                  <div class="miniValue">10d → 6–8d</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="diagram">
+              <div class="diagramHead">
+                <h4>Automation flow</h4>
+                <button class="btn small ghost copyMermaid" data-target="m3">Copy diagram</button>
+              </div>
+
+              <pre class="mermaid" id="m3">
+flowchart LR
+  F[Intake Form] --> P[Power Automate]
+  P --> A[Create / Update Work Items]
+  A --> D[Dashboards + Queries]
+  A --> C[CI/CD Pipelines]
+  D --> S[Stakeholders]
+              </pre>
+
+              <hr class="sep" />
+
+              <h4 class="mt10">CI/CD flow (data workloads)</h4>
+              <div class="diagramHead">
+                <div class="muted tiny">Example pattern for Databricks + Snowflake releases</div>
+                <button class="btn small ghost copyMermaid" data-target="m4">Copy diagram</button>
+              </div>
+
+              <pre class="mermaid" id="m4">
+flowchart LR
+  Dev[Dev branch] --> PR[Pull Request]
+  PR --> Build[ADO Pipeline: build + unit checks]
+  Build -->|Approve| Deploy[Release: Deploy notebooks/jobs]
+  Deploy --> DBX[Databricks Jobs/Workflows]
+  DBX --> SF[Snowflake loads]
+  SF --> BI[Power BI/Tableau]
+  Obs[Monitor/Alerts] -.-> DBX
+  Obs -.-> SF
+              </pre>
+
+              <p class="smallHint">Keep secrets in Key Vault; use service principals; log job runs and alerts.</p>
+            </div>
+          </div>
+        </article>
+
       </div>
     </section>
 
     <!-- SKILLS -->
     <section id="skills" class="section alt">
       <div class="container">
-        <h2>Skills</h2>
+        <div class="sectionHead">
+          <h2>Skills</h2>
+        </div>
 
-        <ul>
-          <li>Microsoft Fabric (OneLake, Lakehouse, Deployment Pipelines)</li>
-          <li>Azure Data Factory</li>
-          <li>Azure Databricks (Delta Lake)</li>
-          <li>Snowflake (Snowpipe, Warehouse tuning)</li>
-          <li>CI/CD (Azure DevOps, GitHub Actions)</li>
-          <li>Data Governance (RBAC, Purview)</li>
-        </ul>
+        <div class="grid3">
+          <div class="card">
+            <h3>Cloud & Data</h3>
+            <ul class="clean">
+              <li>Azure Data Factory (ADF)</li>
+              <li>ADLS Gen2 • Azure Synapse • Microsoft Fabric</li>
+              <li>Azure Databricks (Jobs/Workflows, Delta Lake, MLflow)</li>
+              <li>Snowflake (Snowpipe, warehouse optimization)</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Programming</h3>
+            <ul class="clean">
+              <li>Python • PySpark</li>
+              <li>SQL • SnowSQL</li>
+              <li>Flask (APIs)</li>
+              <li>R (basic)</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Ops & Monitoring</h3>
+            <ul class="clean">
+              <li>Azure Monitor • Logging</li>
+              <li>Prometheus • ELK • Splunk</li>
+              <li>Key Vault • RBAC</li>
+              <li>Git • GitHub • CI/CD pipelines</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid3">
+          <div class="card">
+            <h3>Big Data</h3>
+            <ul class="clean">
+              <li>Apache Spark • Kafka</li>
+              <li>HDFS • Airflow</li>
+              <li>Delta Lake ACID transactions</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Data Modeling</h3>
+            <ul class="clean">
+              <li>Star & Snowflake schema</li>
+              <li>OLAP / OLTP concepts</li>
+              <li>BI-ready semantic thinking</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Tools</h3>
+            <ul class="clean">
+              <li>Power BI • Tableau</li>
+              <li>SSIS • SSRS • Power Apps • Power Automate</li>
+              <li>Linux • Windows</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
     <section id="experience" class="section">
       <div class="container">
-        <h2>Experience</h2>
+        <div class="sectionHead">
+          <h2>Experience</h2>
+        </div>
 
-        <h3>Azure Data Engineer — AXA Insurance</h3>
-        <p>Jan 2024 – Dec 2025 • Stamford, CT</p>
+        <div class="timeline">
+          <div class="timelineItem">
+            <div class="timelineLeft">
+              <div class="time">Jan 2024 – Dec 2025</div>
+              <div class="place">Stamford, CT</div>
+            </div>
+            <div class="timelineRight card">
+              <h3>Azure Data Engineer — AXA Insurance</h3>
+              <ul>
+                <li>Built ADF + Databricks + Snowflake pipelines using medallion architecture.</li>
+                <li>Implemented data quality checks + reconciliation for migration parallel runs.</li>
+                <li>Tuned Snowflake warehouses and Databricks jobs for performance and cost control.</li>
+                <li>Applied RBAC and secrets patterns to meet compliance needs.</li>
+              </ul>
+            </div>
+          </div>
 
-        <h3>Azure Data Engineer — Vistara Airlines</h3>
-        <p>Apr 2019 – Jun 2022 • India</p>
+          <div class="timelineItem">
+            <div class="timelineLeft">
+              <div class="time">Apr 2019 – Jun 2022</div>
+              <div class="place">India</div>
+            </div>
+            <div class="timelineRight card">
+              <h3>Azure Data Engineer — Vistara Airlines</h3>
+              <ul>
+                <li>Built Spark/PySpark pipelines and Snowpipe ingestion for analytics use cases.</li>
+                <li>Designed star/snowflake schemas and delivered curated Delta datasets.</li>
+                <li>Optimized Spark jobs using Spark UI to reduce runtime and overhead.</li>
+                <li>Implemented governance and access controls across Databricks environments.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timelineItem">
+            <div class="timelineLeft">
+              <div class="time">Oct 2018 – Dec 2018</div>
+              <div class="place">Hyderabad, India</div>
+            </div>
+            <div class="timelineRight card">
+              <h3>Data Engineer (Intern) — RAK INFO TEK</h3>
+              <ul>
+                <li>Created tables, views, procedures; supported ETL via SSIS and SQL Server.</li>
+                <li>Automated ingestion patterns and built Power Automate workflows.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTS -->
+    <section id="certs" class="section alt">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Certifications</h2>
+        </div>
+
+        <div class="grid3">
+          <div class="card">
+            <h3>Microsoft Azure Fundamentals</h3>
+            <p class="muted">AZ-900</p>
+          </div>
+          <div class="card">
+            <h3>Microsoft Azure Data Engineer Associate</h3>
+            <p class="muted">DP-203</p>
+          </div>
+          <div class="card">
+            <h3>Databricks Certified Data Engineer Associate</h3>
+            <p class="muted">Databricks</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="section">
       <div class="container">
-        <h2>Contact</h2>
+        <div class="sectionHead">
+          <h2>Contact</h2>
+        </div>
 
-        <p>Email: <a href="mailto:popurisivaji@gmail.com">popurisivaji@gmail.com</a></p>
-        <p>Phone: 978-421-5002</p>
-        <p>GitHub: <a href="https://github.com/popuris3">github.com/popuris3</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/sivaji-p-71b396301">LinkedIn Profile</a></p>
+        <div class="contactGrid">
+          <div class="card">
+            <h3>Let’s connect</h3>
+            <p class="muted">Open to Data Engineer / Senior Data Engineer roles (Azure, Fabric, Databricks, Snowflake).</p>
 
-        <footer>
-          <p>© <span id="year"></span> Sivaji Popuri</p>
+            <div class="contactRow">
+              <div class="contactLabel">Email</div>
+              <a class="contactValue" href="mailto:popurisivaji@gmail.com">popurisivaji@gmail.com</a>
+            </div>
+            <div class="contactRow">
+              <div class="contactLabel">Phone</div>
+              <div class="contactValue">978-421-5002</div>
+            </div>
+            <div class="contactRow">
+              <div class="contactLabel">GitHub</div>
+              <a class="contactValue" href="https://github.com/popuris3" target="_blank" rel="noreferrer">https://github.com/popuris3</a>
+            </div>
+            <div class="contactRow">
+              <div class="contactLabel">LinkedIn</div>
+              <a class="contactValue" href="https://www.linkedin.com/in/sivaji-p-71b396301" target="_blank" rel="noreferrer">https://www.linkedin.com/in/sivaji-p-71b396301</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Quick note</h3>
+            <p class="muted">
+              If you want, i can also add a clean “Projects” repo section with links and screenshots.
+              But keeping it simple is totally fine.
+            </p>
+            <div class="divider"></div>
+            <p class="tiny muted">Last updated: <span id="lastUpdated"></span></p>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <p>© <span id="year"></span> Sivaji Popuri • Built with plain HTML/CSS • Mermaid diagrams</p>
         </footer>
       </div>
     </section>
-
   </main>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
 
